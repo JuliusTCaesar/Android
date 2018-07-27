@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/cbtn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你会哪些语言："
+        android:textSize="30dp" />
+
+    <CheckBox
+        android:id="@+id/cbtn_android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        android:textSize="20sp"
+        android:layout_below="@id/cbtn_text"/>
+
+    <CheckBox
+        android:id="@+id/cbtn_ios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IOS"
+        android:textSize="20sp"
+        android:layout_below="@id/cbtn_android"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cbtn_java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        android:textSize="20sp"
+        android:layout_below="@id/cbtn_ios"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cbtn_php"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Php"
+        android:textSize="20sp"
+        android:layout_below="@id/cbtn_java"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/cbtn_ll"
+        android:layout_below="@+id/cbtn_php"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兴趣爱好"
+            android:textSize="30dp"/>
+
+        <CheckBox
+            android:id="@+id/cbtn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吃饭"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"/>
+
+        <CheckBox
+            android:id="@+id/cbtn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="睡觉"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+</RelativeLayout>
